@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- geeft aan de browser door welke versie van HTML het is -->
+<html lang="nl">
+<!-- geschreven taal op de website -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- speciale tekens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- breedte van device, behoud zelfde zoomweergave bij draaien scherm -->
+    <title>Transavia Stories</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <link rel="stylesheet" type="text/css" href="styles/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+
+
+</head>
+
+<body class="body">
+
+    <!--
+=================================================================
+
+    HEADER
+
+=================================================================
+-->
+
+    <header>
+        <a href="overzichtspagina.html">
+            <img class="verborgen-mobile" src="images/logo.png" alt="Logo Transavia" />
+            <img class="verborgen-desktop" src="images/logo-mini.png" alt="Logo Transavia" />
+            <img class="verborgen-laatste" src="images/logo-super-mini.png" alt="Logo Transavia" />
+        </a>
+
+        <nav>
+            <ul class="main-nav">
+                <li><a href="overzichtspagina.html" class="geselecteerd">Alle stories</a></li>
+                <li><a href="overzichtspagina.html">Thema's</a></li>
+                <li><a href="aanmeldpagina.html">Mijn account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+=================================================================
+
+    SECTION MET FILTERS
+
+=================================================================
+-->
+
+    <section>
+        <!-- start section, veranderen in div? -->
+        <section class="filter">
+            <article>
+                <h2>Hi Peter,</h2>
+                <h3>Hoeveel tijd heb je om te lezen?</h3>
+                <form>
+                    <select name="filter">
+                        <option value="onbeperkt-tijd">Ik heb alle tijd (alles weergeven)</option>
+                        <option value="max-5-minuten-tijd">Ik heb weinig tijd, ongeveer 5 minuten</option>
+                        <option value="max-15-minuten-tijd">Ik heb wel even tijd, ongeveer 15 minuten</option>
+                    </select>
+                </form>
+
+
+                <h3>Waar heb je zin in?</h3>
+                <form>
+                    <select name="filter">
+                        <option value="alle-categorieën-weergeven">Maakt niet uit (alles weergeven)</option>
+                        <option value="grapig-verhaal">Een verhaal om te gieren van het lachen</option>
+                        <option value="emotioneel-verhaal">Een meeslepend emotioneel verhaal</option>
+                        <option value="spannend-verhaal">Een spannend verhaal</option>
+                    </select>
+                </form>
+                <!--<input class="button" type="submit" value="Zoek">-->
+                <button class="progress-button" data-style="rotate-back" data-perspective data-horizontal>Zoek</button>
+            </article>
+        </section>
+
+        <!--
+=================================================================
+
+    SECTION MET ARTICLES (KORTE STUKJES VERHAAL)
+
+=================================================================
+-->
+        <article class="rood">
+            <img src="images/icoon-spannend.png" alt="Lepra">
+            <h3>Lepra</h3>
+            <time class="entry-date published" datetime="2011-03-07">7 maart 2011</time>
+            <p>
+                Op Centraal Station stap ik af van de kar die lijken ophaalt. Ik had een lift gekregen. Mijn zoon ligt in zijn wagentje te slapen. Arm ventje. Gelukkig weet hij niet dat er een lepra... <a href="lepra.html">Lees verder ></a>
+            </p>
+        </article>
+
+        <article class="groen1">
+            <img src="images/icoon-grappig.png" alt="Charlie Sheen">
+            <h3>Charlie Sheen</h3>
+            <time class="entry-date published" datetime="2011-03-10">10 maart 2011</time>
+            <p>
+                Je hebt de apen, dan komen de mensen, dan een hele tijd niks, dan God en dan komt Charlie Sheen. Ik stap de bus uit. Winning! Ik loop achter mijn zoon aan. Die ligt in zijn wagen. <a href="charlie-sheen.html">Lees verder ></a>
+            </p>
+        </article>
+
+        <article class="groen2">
+            <img src="images/icoon-grappig.png" alt="Verliefd">
+            <h3>Verliefd</h3>
+            <time class="entry-date published" datetime="2011-02-14">14 februari 2011</time>
+            <p>
+                Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag. En wat een heerlijke dag! Het was twaalf uur, onze fantastische zoon sliep net. De miezelregen... <a href="verliefd.html">Lees verder ></a>
+            </p>
+        </article>
+
+        <article class="blauw">
+            <img src="images/icoon-emotioneel.png" alt="Freudiaans">
+            <h3>Freudiaans</h3>
+            <time class="entry-date published" datetime="2011-06-09T10:00:35+00:00">3 juni 2011</time>
+            <p>
+                Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan... <a href="overzichtspagina.html">Lees verder ></a>
+            </p>
+        </article>
+
+        <article class="rood">
+            <img src="images/icoon-spannend.png" alt="Steenkolenfrans">
+            <h3>Steenkolenfrans</h3>
+            <time class="entry-date published" datetime="2011-06-09T10:00:35+00:00">7 juni 2011</time>
+            <p>
+                Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque... <a href="overzichtspagina.html">Lees verder ></a>
+            </p>
+        </article>
+
+        <article class="blauw">
+            <img src="images/icoon-emotioneel.png" alt="Martin Bril">
+            <h3>Martin Bril</h3>
+            <time class="entry-date published" datetime="2011-06-09T10:00:35+00:00">11 juni 2011</time>
+            <p>
+                Centraal Station. Iedereen gaat er naartoe, niemand moet er zijn. Behalve om verder te reizen. Ik stap uit de bus, lijn 21. Van Geuzenveld naar Centraal Station. Mijn zoon slaapt... <a href="overzichtspagina.html">Lees verder ></a>
+            </p>
+        </article>
+
+        <section class="trending-personal">
+
+            <article class="trending">
+
+                <h2>Toeristische route</h2>
+                <h3>Een selectie speciaal afgestemd op jou voorkeuren</h3>
+                <p>Als u naar links kijkt, ziet u het Centraal Station. Gebouwd tussen 1881 en 1889 door architect P.H.J. Cuypers of P.J.H. Cuypers, daar wil ik graag van af wezen. Volgens Cuypers moest een station een ‘doorgangsroute zijn waar vermoeide reiziger even tot rust konden komen’. </p>
+
+                <h4>Of lees</h4>
+                <ul>
+                    <li><a href="overzichtspagina.html">Onomatopee</a></li>
+                    <li><a href="overzichtspagina.html">Gesponsord</a></li>
+                </ul>
+            </article>
+
+            <article class="trending">
+
+                <h2>1. Bejaard</h2>
+                <h3>Top 3: Meest populaire stories gebaseerd op likes</h3>
+                <p>De chauffeur kijkt verveeld maar vooral ook licht geïrriteerd via zijn achteruitkijkspiegel toe hoe ik samen met mijn kleinzoon, die in zijn kinderwagen ligt te slapen, bus 21 uitstap. Waar die lichte irritatie vandaan komt weet ik niet, want dit is de eindhalte, de goede man hoeft de komende twintig minuten nergens naartoe. </p>
+
+                <h4>Of lees</h4>
+                <ul>
+                    <li><a href="overzichtspagina.html">2. Stoned</a></li>
+                    <li><a href="overzichtspagina.html">3. Lange Frans</a></li>
+                </ul>
+            </article>
+        </section>
+    </section>
+    <!-- einde section, veranderen in div? -->
+
+    <!--
+=================================================================
+
+    SCRIPT, EXTERNE BRON, ZIE APART DOC
+
+=================================================================
+-->
+   
+
+    <script src="js/classie.js"></script>
+    <script src="js/progressButton.js"></script>
+    <script>
+        [].slice.call(document.querySelectorAll('button.progress-button')).forEach(function (bttn) {
+            new ProgressButton(bttn, {
+                callback: function (instance) {
+                    var progress = 0,
+                        interval = setInterval(function () {
+                            progress = Math.min(progress + Math.random() * 0.1, 1);
+                            instance._setProgress(progress);
+
+                            if (progress === 1) {
+                                instance._stop(1);
+                                clearInterval(interval);
+                            }
+                        }, 200);
+                }
+            });
+        });
+    </script>
+
+        <!--
+=================================================================
+
+    EIGEN SCRIPT OM AAN DE OPDRACHT TE VOLDOEN
+
+=================================================================
+-->
+
+    <script type=text/javascript src="../transavia-stories/js/script.js"></script>
+</body>
+
+</html>

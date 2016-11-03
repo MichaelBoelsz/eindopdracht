@@ -1,0 +1,159 @@
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* General styles for all types of buttons */
+.progress-button {
+	position: relative;
+	display: inline-block;
+	padding: 0 60px;
+	outline: none;
+	border: none;
+	background: #1d9650;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 1em;
+	line-height: 4;
+}
+
+.progress-button[disabled],
+.progress-button[disabled].state-loading {
+	cursor: default;
+}
+
+.progress-button .content {
+	position: relative;
+	display: block;
+}
+
+.progress-button .content::before,
+.progress-button .content::after  {
+	position: absolute;
+	right: 20px;
+	font-family: "icomoon";
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s;
+}
+
+.progress-button .content::before {
+	content: "\e600"; /* Checkmark for success */
+}
+
+.progress-button .content::after {
+	content: "\e601"; /* Cross for error */
+}
+
+.progress-button.state-success .content::before,
+.progress-button.state-error .content::after {
+	opacity: 1;
+}
+
+.notransition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+.progress-button .progress {
+	background: #f3e5d8; /* laadbalk achtergrond */
+}
+
+.progress-button .progress-inner {
+	position: absolute;
+	left: 0;
+	background: #fe3169; /* laadbalk zelf */
+}
+
+.progress-button[data-horizontal] .progress-inner {
+	top: 0;
+	width: 0;
+	height: 100%;
+	-webkit-transition: width 0.3s, opacity 0.3s;
+	transition: width 0.3s, opacity 0.3s;
+}
+
+.progress-button[data-vertical] .progress-inner {
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s;
+	transition: height 0.3s, opacity 0.3s;
+}
+
+/* Necessary 3d styles for buttons with perspective */
+
+.progress-button[data-perspective] {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	background: transparent;
+	-webkit-perspective: 900px;
+	perspective: 900px;
+}
+
+.progress-button[data-perspective] .content {
+	padding: 0 40px;
+    background: #2800a0; /* kleur van de button */
+    border-radius: 5em;
+    
+    background: #2800a0;
+    border: none;
+    border-radius: 5em;
+    color: #ffffff;
+    display: block;
+    font: 1em/1.5em sans-serif;
+    font-family: 'nexa_boldregular';
+    height: 2.7em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2em;
+    width: 8em;
+}
+
+.progress-button[data-perspective] .progress-wrap {
+	display: block;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.progress-button[data-perspective] .content,
+.progress-button[data-perspective] .progress {
+	outline: 1px solid rgba(0,0,0,0); /* Smoothen jagged edges in FF */
+}
+
+/* Rotate back 3d */
+/* ====================== */
+
+.progress-button[data-style="rotate-back"] .progress-wrap {
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.progress-button[data-style="rotate-back"] .content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.progress-button[data-style="rotate-back"] .progress {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.progress-button[data-style="rotate-back"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(180deg) scaleX(0.6) scaleY(0.3);
+	transform: rotateX(180deg) scaleX(0.6) scaleY(0.3);
+}
+

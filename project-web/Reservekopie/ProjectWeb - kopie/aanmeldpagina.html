@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overzichtspagina</title>
+</head>
+
+<body>
+
+    <header>
+
+        <section>
+            <img src="images/naamafbeelding.jpg" alt="Naam afbeelding">
+        </section>
+
+        <section>
+            <form action="action_page.php">
+                <input type="search" name="zoeken">
+                <input type="submit">
+            </form>
+        </section>
+
+        <a href="url">Creëer account</a>
+        <a href="url">Inloggen</a>
+
+        <section>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Alle thema's</a></li>
+                <li><a href="">Alle verhalen</a></li>
+            </ul>
+        </section>
+
+        <!-- Bron onderstaande filters: http://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select -->
+        <form action="action_page.php">
+            <select name="filter">
+                <option value="alles-weergeven">Alles weergeven</option>
+                <option value="meeste-likes">Meeste likes</option>
+                <option value="14-25-jaar">14 - 25 jaar</option>
+                <option value="26-45-jaar">26 - 45 jaar</option>
+                <option value="26-45-jaar">46 jaar en ouder</option>
+            </select>
+            <input type="submit">
+        </form>
+
+        <form action="action_page.php">
+            <select name="filter">
+                <option value="alles-weergeven">Ik heb onbeperkt leestijd</option>
+                <option value="max-5-minuten-tijd">Ik heb weinig tijd, ongeveer 5 minuten</option>
+                <option value="max-15-minuten-tijd">Ik heb wel even tijd, ongeveer 15 minuten</option>
+            </select>
+            <input type="submit">
+        </form>
+
+    </header>
+    
+    Voornam, tussenvoegsel, achternaam, emailadres, straat postcode huisnummer, telefoonnummer, wachtwoord
+    
+    <form action="action_page.php">
+    Voornaam:
+  <input type="text" name="firstname" value="John">
+      Tussenvoegsel:
+  <input type="text" name="firstname" value="de">
+  Achternaam:
+  <input type="text" name="lastname" value="Vries">
+  E-mail:
+  <input type="email" name="email" value="voorbeeld@email.nl">
+  Straatnaam + huisnummer
+  <input type="text" name="straatnaam-huisnummer" value="Superstraat 1">
+  Wachtwoord:
+  <input type="password" name="password" value="xxxx">
+<input type="submit" value="Verzenden">
+                                            
+  
+  
+
+</body>
+
+</html>

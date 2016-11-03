@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transavia Stories</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+<!--
+=================================================================
+
+    HEADER
+
+=================================================================
+-->
+
+    <header>
+        <a href="index.html">
+            <img class="verborgen-mobile" src="images/logo.png" />
+            <img class="verborgen-desktop" src="images/logo-mini.png" />
+            <img class="verborgen-laatste" src="images/logo-super-mini.png" />
+
+        </a>
+
+        <nav>
+            <ul class="main-nav">
+                <li><a href="overzichtspagina.html">Alle stories</a></li>
+                <li><a href="overzichtspagina.html">Alle thema's</a></li>
+                <li><a href="aanmeldpagina.html"class="geselecteerd">Mijn stories</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--
+=================================================================
+
+    SECTION MET ARTICLES
+
+=================================================================
+-->
+
+    <!-- Verhalen die behoren tot het thema 'Gieren van het lachen' -->
+
+
+    <section>
+
+        <section class="inloggen">
+            <article>
+                <h1>Aanmelden</h1>
+
+                <form>                    
+
+                    <fieldset>
+                       <legend>Persoonsgegevens</legend>
+                        <label for="naam">Naam:</label>
+                        <input type="text" name="naam" id="naam" placeholder="Bijv. Mark de Vries" required> 
+                        
+                        <label for="vluchtnummer">Vluchtnummer (6 cijfers):</label>
+                        <input type="number" name="vluchtnummer" id="vluchtnummer" placeholder="Bijv. 395842" required>                                             
+                    </fieldset>
+
+                    <fieldset>
+                       <legend>Adresgegevens</legend>
+                        <label for="straatnaam">Straatnaam:</label>
+                        <input type="text" name="straatnaam" id="straatnaam" placeholder="" required>                       
+                       
+                        <label for="huisnummer">Huisnummer:</label>
+                        <input type="text" name="huisnummer" id="huisnummer" placeholder="" required>
+                
+                        <label for="postcode">Postcode:</label>
+                        <input type="text" name="postcode" id="postcode" placeholder="" required>                       
+                       
+                        <label for="woonplaats">Woonplaats:</label>
+                        <input type="text" name="woonplaats" id="woonplaats" placeholder="" required>
+                    </fieldset>
+
+                    <fieldset>
+                       <legend>Inloggegevens</legend>
+                        <label for="email">Emailadres:</label>
+                        <input type="text" name="email" id="email" placeholder="Bijv. email@voorbeeld.com" required>
+
+                        <label for="wachtwoord">Wachtwoord:</label>
+                        <input type="text" name="wachtwoord" id="wachtwoord" placeholder="" required>
+                                              
+                        <label for="herhaalwachtwoord">Herhaal wachtwoord:</label>
+                        <input type="text" name="herhaalwachtwoord" id="herhaalwachtwoord" placeholder="" required>                                                              
+                    </fieldset>
+                    
+                <input class="button" type="submit" value="Login">
+
+                </form>
+
+            </article>
+        </section>
+
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

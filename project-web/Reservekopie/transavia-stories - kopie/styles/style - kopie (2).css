@@ -1,0 +1,566 @@
+/*
+=================================================================
+
+    CSS RESET    bron: http://meyerweb.com/eric/tools/css/reset/    Eric Meyer reset v2.0 | 20110126 | License: none (public domain)
+
+=================================================================
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+/*
+=================================================================
+
+    CSS LINT    bron: Moodle: CodeConventiesSteen.rtf    Moet zorgen voor minder fouten in de validator.
+
+=================================================================
+*/
+
+
+/*csslint empty-rules:false, ids:false, outline-none:false, fallbackcolors:
+false, unique-headings: false, box-model: false, box-sizing: false, qualified-headings:
+false, gradients: false, star-property-hack: false, import: false, universal-selector: false,
+unqualified-attributes: false, overqualified-elements: false*/
+
+
+/*
+=================================================================
+
+    NEXA FONT
+
+=================================================================
+*/
+
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('Nexa_Free_Bold-webfont.eot');
+    src: url('Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('Nexa_Free_Bold-webfont.woff2') format('woff2'), url('Nexa_Free_Bold-webfont.woff') format('woff'), url('Nexa_Free_Bold-webfont.ttf') format('truetype'), url('Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('Nexa_Free_Light-webfont.eot');
+    src: url('Nexa_Free_Light-webfont.eot?#iefix') format('embedded-opentype'), url('Nexa_Free_Light-webfont.woff2') format('woff2'), url('Nexa_Free_Light-webfont.woff') format('woff'), url('Nexa_Free_Light-webfont.ttf') format('truetype'), url('Nexa_Free_Light-webfont.svg#nexa_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+=================================================================
+
+    HEADER
+
+=================================================================
+*/
+
+header {
+    display: flex;
+    background: #fe3169;
+    height: 3.3em;
+    text-align: center;
+    width: 100%;
+}
+
+header img {
+    margin-top: 0.45rem;
+    max-height: 2.5rem;
+}
+
+.main-nav {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.main-nav a {
+    font: 1.4em/1.5em sans-serif;
+    font-family: 'nexa_lightregular';
+    margin: 0em;
+    color: #ffffff;
+    display: block;
+    padding-top: .5em;
+    padding-right: 1.4em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a.geselecteerd {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 66em) {
+    header img {
+        margin-left: 2.4em;
+    }
+}
+
+@media screen and (min-width: 55em) {
+    header img {
+        margin-left: 1.4em;
+    }
+}
+
+@media screen and (min-width: 66em) {
+    .verborgen-desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .verborgen-mobile {
+        display: none;
+    }
+}
+
+
+
+
+/*
+=================================================================
+
+    BODY
+
+=================================================================
+*/
+
+
+/* toegepast op alles in body*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f3e5d8;
+    background-image: url(/images/achtergrond2.jpg);
+    background-repeat: repeat-x;
+}
+
+
+/*
+=================================================================
+
+    FILTER
+
+=================================================================
+*/
+
+section > section.filter {
+    /*background-color: #ffffff; TESTKLEUR*/
+    box-sizing: border-box;
+    margin: .7em;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 0.1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 65.6em;
+}
+
+@media screen and (min-width: 70em) {
+    section > section.filter > article {
+        min-width: 26em;
+    }
+}
+
+section > section.filter > article > form > select {
+    color: #606060;
+    font: 1.0em/1.5em sans-serif;
+    font-family: 'nexa_lightregular';
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: .3em;
+    height: 2.2em;
+}
+
+@media screen and (min-width: 70em) {
+    section > section.filter > article > form > select {
+        width: 23.8em;
+    }
+}
+
+@media screen and (min-width: 45em) and (max-width: 70em) {
+    section > section.filter > article > form > select {
+        width: 18.8em;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    section > section.filter > article > form > select {
+        width: 18.8em;
+    }
+}
+
+section > section.filter > article > h1 {
+    margin-left: 0.5em;
+    margin-right: 0em;
+    margin-top: 0.5em;
+    color: #01d66c;
+    font: 1.9em/1.5em sans-serif;
+    font-family: 'nexa_boldregular';
+}
+
+section > section.filter > article > h2 {
+    margin-left: 1em;
+    margin-right: 0em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #000000;
+    font: 1em/1.0em sans-serif;
+    font-family: 'nexa_boldregular';
+}
+
+
+/*
+section > section.filter > article {
+    width: 25.5em;
+}
+*/
+
+@media screen and (min-width: 70em) {
+    section > section.filter {
+        /*background-color: blue;*/
+        border: none;
+        height: 21em;
+        width: 66em;
+    }
+}
+
+@media screen and (min-width: 45em) and (max-width: 70em) {
+    section > section.filter {
+        /*background-color: blue;*/
+        border: none;
+        height: 21em;
+        min-width: 44em;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    section > section.filter {
+        /*background-color: blue;*/
+        border: none;
+        height: 21em;
+        min-width: 24em;
+    }
+}
+
+input[type="submit"] {
+    color: #ffffff;
+    font: 1em/1.5em sans-serif;
+    font-family: 'nexa_boldregular';
+    background: #2800a0;
+    border: none;
+    border-radius: 5em;
+    margin-top: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 2.7em;
+    width: 8em;
+}
+
+
+/*
+=================================================================
+
+    STORIES
+
+=================================================================
+*/
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 70em;
+    background: yellow;
+}
+
+section > article {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: .8em;
+    max-width: 21em;
+    margin: .7em;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 0.1em;
+}
+
+section > article > p,
+section > article > img {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+section > article > img {
+    margin-top: 1em;
+    object-position: top;
+}
+
+section > article > time,
+section > article > h1 {
+    margin-right: 1em;
+}
+
+section > article > time {
+    font: 1em/1.5em sans-serif;
+    font-family: 'nexa_lightregular';
+    margin-left: 5.4em;
+}
+
+section > article > h1 {
+    margin-left: 4.5em;
+    margin-right: 1em;
+    margin-top: -2.9em;
+    color: #01d66c;
+    font: 1.2em/1.5em sans-serif;
+    font-family: 'nexa_boldregular';
+}
+
+section > article > p {
+    color: #606060;
+    font: 1em/1.5em sans-serif;
+    font-family: 'nexa_lightregular';
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom:
+}
+
+section > article > p > a {
+    font: sans-serif;
+    font-family: 'nexa_boldregular';
+    color: #2800a0;
+}
+
+section > article > p > a:hover {
+    color: #fe3169;
+}
+
+/*
+=================================================================
+
+    TRENDING EN PERSONAL STORIES BUITENKANT
+
+=================================================================
+*/
+
+section.trending-personal {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: .8em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 0.1em;
+    color: #606060;
+    font: 1em/1.5em sans-serif;
+    font-family: 'nexa_lightregular';
+    font-weight: 600;
+    margin-bottom: 2.5em;
+    margin-top: 2.5em;
+}
+
+@media screen and (min-width: 70em) {
+section.trending-personal {
+        padding: 1em;
+        height: 40em;
+        width: 66em;
+    }
+}
+
+@media screen and (min-width: 45em) and (max-width: 70em) {
+    section.trending-personal {
+        height: 21em;
+        min-width: 44em;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    section.trending-personal {
+        height: 21em;
+        min-width: 24em;
+    }
+}
+
+/*
+=================================================================
+
+    TRENDING EN PERSONAL STORIES INHOUD
+
+=================================================================
+*/
+
+article.trending {
+    background-color: yellow;
+    box-sizing: border-box;
+    border-radius: .8em;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 0.1em;
+    color: #606060;
+    font: 1em/1.5em sans-serif;
+    font-family: 'nexa_lightregular';
+    font-weight: 600;
+    height: 10em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    background-image: url(/images/toeristische-route.jpg)
+}
+
+article.trending > h1 {
+    color: white;
+    margin-top: 2em;
+    color: #ffffff;
+    font: 2.5em/1.5em sans-serif;
+    font-family: 'nexa_boldregular';
+    font-weight: 600;
+    margin-left: 0.6em;
+    text-shadow: .1em .1em .4em #606060;
+}
+
+@media screen and (min-width: 70em) {
+article.trending {
+        min-width: 62.7em;
+    }
+}
+
